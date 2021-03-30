@@ -13,7 +13,8 @@
 <body>
     <div id="root">
         <h1>Lista mail</h1>
-        <ul>
+        <!-- PER FARLE USCIRE TUTTE INSIEME ANCHE SE DOPO -->
+        <ul v-if="emails.length == 10">
             <li v-for="email in emails">{{email}}</li>
         </ul>
     </div>
